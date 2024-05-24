@@ -12,10 +12,10 @@
         android:layout_height="0dp"
         android:layout_weight="10"
         android:padding="30dp">
-        <com.anychart.AnyChartView
-            android:id="@+id/temperature_linear_chart"
+        <com.jjoe64.graphview.GraphView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:id="@+id/temperature_linear_chart" />
     </LinearLayout>
 
     <LinearLayout
@@ -23,11 +23,16 @@
         android:layout_height="0dp"
         android:layout_weight="10"
         android:padding="30dp">
-        <com.anychart.AnyChartView
-            android:id="@+id/humidity_linear_chart"
+        <com.jjoe64.graphview.GraphView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:id="@+id/humidity_linear_chart" />
     </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add point"
+        android:id="@+id/button"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,5 +41,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </LinearLayout>
